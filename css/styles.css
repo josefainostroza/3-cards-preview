@@ -36,6 +36,11 @@ body {
   height: 442px;
   position: relative;
 }
+@media screen and (width>768px) {
+  .card {
+    display: inline-block;
+  }
+}
 .card-orange {
   background-color: #e28625;
 }
@@ -49,25 +54,32 @@ body {
 .parrafos {
   font-size: 15px; /*tamaño de la fuente*/
   line-height: 25px; /*interlineado*/
+  width: 231px;
 }
 .images {
   margin-bottom: 40px;
 }
-.bottom {
+.button {
   position: absolute;
   bottom: 48px;
   border-radius: 120px;
   background-color: aliceblue;
-  text-align: center;
-  display: inline-block;
   padding: 11px 30.5px;
 }
-.bottom-orange {
+@media (hover: hover) {
+  .button:hover {
+    border: 1px solid rgb(255, 255, 255);
+    background-color: transparent;
+    color: #fff;
+  }
+}
+
+.button-orange {
   color: #e28625;
 }
-.bottom-blue {
+.button-blue {
   color: #006971;
 }
-.bottom-green {
+.button-green {
   color: #004140;
 }
